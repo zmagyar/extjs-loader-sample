@@ -1,0 +1,63 @@
+{
+       
+                                     
+      
+                                                                                                
+                                                                       
+       
+    "namespace": "Ext",
+
+    "name": "modern",
+    "type": "toolkit",
+
+    "framework": "ext",
+    "requires": [
+        "core"
+    ],
+
+    "creator": "Sencha",
+    "summary": "The Modern UI Toolkit",
+    "detailedDescription": "UI components for modern browsers",
+
+    "version": "6.2.1.167",
+    "compatVersion": "6.0.0",
+    "format": "1",
+
+    "output": "${framework.dir}/build",
+    "local": true,
+    "build": {
+        "dir": "${package.output}"
+    },
+
+    "sass": {
+        "namespace": "Ext",
+
+        "etc": "${package.dir}/sass/etc/all.scss",
+
+        "var": "${package.dir}/sass/var",
+
+        "src": "${package.dir}/sass/src"
+    },
+
+    "classpath": "${package.dir}/src",
+
+    "overrides": "${package.dir}/overrides",
+
+    "subpkgs": [
+        "theme-material",
+        "theme-ios",
+
+                     
+        "theme-cupertino",
+        "theme-mountainview",
+        "theme-windows",
+
+        "theme-neptune",
+        "theme-triton"
+    ],
+
+    "buildOptions": {
+        "modern": true
+    }
+}
+

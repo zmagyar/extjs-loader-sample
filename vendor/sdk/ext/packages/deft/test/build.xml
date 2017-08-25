@@ -1,0 +1,43 @@
+<project name="DeftJS Unit Tests" default="test">
+
+	<property file="build.properties" />
+
+	<target name="clean" description="Remove artifacts in build directory from previous builds.">
+		<delete dir="coverage" />
+	</target>
+
+	<target name="test" description="Tests Deft JS against all supported versions of Sencha Touch and Ext JS">
+
+		<echo message="Performing Deft JS unit tests with the following browsers: ${karma.browsers}." />
+
+		<echo message="Ext JS 5.0.0" />
+		<exec executable="karma" failonerror="true">
+			<arg line="start karma/ext/5.0.0.conf.js --single-run --browsers ${karma.browsers}" />
+		</exec>
+
+    <!-- no touch testing until 5.0.0 is released 
+   	<echo message="Sencha Touch 5.0.0" />
+ 		<exec executable="karma" failonerror="true">
+      <arg line="start karma/touch/5.0.0.conf.js - -single-run - -browsers ${karma.browsers}" />
+    </exec>
+    -->
+
+	</target>
+	
+	<target name="coverage" description="Tests and generates a coverage report for Deft JS against all supported versions of Sencha Touch and Ext JS">
+    
+		<echo message="Performing Deft JS unit tests with the following browsers: ${karma.browsers}." />
+
+		<echo message="Ext JS 5.0.0" />
+		<exec executable="karma" failonerror="true">
+			<arg line="start karma/ext/5.0.0.conf.js --single-run --browsers ${karma.browsers} --reporters=progress,coverage" />
+		</exec>
+
+   	<echo message="Sencha Touch 5.0.0" />
+ 		<exec executable="karma" failonerror="true">
+      <arg line="start karma/touch/5.0.0.conf.js --single-run --browsers ${karma.browsers} --reporters=progress,coverage" />
+    </exec>
+
+	</target>
+
+</project>

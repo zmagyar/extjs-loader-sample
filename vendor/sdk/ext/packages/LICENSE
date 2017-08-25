@@ -1,0 +1,40 @@
+Sencha Ext JS Bundles
+Copyright (c) 2006-2016, Sencha Inc.
+All rights reserved.
+licensing@sencha.com
+
+options: http://www.sencha.com/license
+license: http://www.sencha.com/legal/sencha-software-license-agreement
+
+
+Commercial License
+------------------------------------------------------------------------------------------
+This version of Sencha Ext JS is licensed commercially. This is the appropriate option 
+if you are creating proprietary applications and you are not prepared to distribute and 
+share the source code of your application under the GPL v3 license. 
+See http://www.sencha.com/legal/sencha-software-license-agreement for license terms.
+
+
+Beta License
+------------------------------------------------------------------------------------------
+If this is a Beta version of Sencha Ext JS, use is permitted for internal evaluation 
+and review purposes and not use for production purposes.
+See http://www.sencha.com/legal/sencha-software-license-agreement (Beta License) 
+for license terms. 
+
+
+
+Third Party Content
+------------------------------------------------------------------------------------------
+The following third party software is distributed with Ext JS Bundles, in addition to the 
+software included with Ext JS itself (see license.txt included with the Ext JS distribution), 
+and is provided under other licenses and/or has source available from other locations. 
+
+
+Library: JSZip
+Location: https://github.com/Stuk/jszip
+License: https://github.com/Stuk/jszip (MIT)
+
+--
+
+THIS SOFTWARE IS DISTRIBUTED "AS-IS" WITHOUT ANY WARRANTIES, CONDITIONS AND REPRESENTATIONS WHETHER EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION THE IMPLIED WARRANTIES AND CONDITIONS OF MERCHANTABILITY, MERCHANTABLE QUALITY, FITNESS FOR A PARTICULAR PURPOSE, DURABILITY, NON-INFRINGEMENT, PERFORMANCE AND THOSE ARISING BY STATUTE OR FROM CUSTOM OR USAGE OF TRADE OR COURSE OF DEALING.  
